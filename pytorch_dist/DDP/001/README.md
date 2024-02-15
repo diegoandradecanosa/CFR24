@@ -12,7 +12,7 @@ El script principal (ddpsrunSBATCH.sh) contiene un preámbulo en el que reservam
 - 64 G de RAM por nodo
 - y 32 núcleos para cada tarea
 
-https://github.com/diegoandradecanosa/CFR24/blob/bc21128df69f854a297964b883275b3f54ea462b/pytorch_dist/DDP/001/ddpsrunSBATCH.sh#L1-L9
+https://github.com/diegoandradecanosa/CFR24/blob/cedf8e9165ed5fb79566ad5b39a72cf279695717/pytorch_dist/DDP/001/ddpsrunSBATCH.sh#L1-L9
 
 Este script debe ser lanzado con el comando:
 ```
@@ -28,15 +28,15 @@ serán relevante para la ejecución distribuida:
 - Se recupera el *WORLD_SIZE* directamente de la variable de entorno *SLURM_NPROCS*
 - Se recupera la *MASTER_ADDR* con un comando de SLURM
 
-https://github.com/diegoandradecanosa/CFR24/blob/bc21128df69f854a297964b883275b3f54ea462b/pytorch_dist/DDP/001/ddpsrunSBATCH.sh#L11-L19
+https://github.com/diegoandradecanosa/CFR24/blob/cedf8e9165ed5fb79566ad5b39a72cf279695717/pytorch_dist/DDP/001/ddpsrunSBATCH.sh#L11-L17
 
 Finalmente, se lanza un script secundario, *mnist_classify_ddp.sh*, con srun.
 
-https://github.com/diegoandradecanosa/CFR24/blob/bc21128df69f854a297964b883275b3f54ea462b/pytorch_dist/DDP/001/ddpsrunSBATCH.sh#L12
+https://github.com/diegoandradecanosa/CFR24/blob/96bb2ead2b3eaaf88f754da818e762ac2555e848/pytorch_dist/DDP/001/ddpsrunSBATCH.sh#L22
 
 El script secundario carga el entorno conda y lanza el script de entrenamiento, pasando como parámetro el número de epochs
 
-https://github.com/diegoandradecanosa/CFR24/blob/bc21128df69f854a297964b883275b3f54ea462b/pytorch_dist/DDP/001/mnist_classify_ddp.sh#L9-L10
+https://github.com/diegoandradecanosa/CFR24/blob/96bb2ead2b3eaaf88f754da818e762ac2555e848/pytorch_dist/DDP/001/mnist_classify_ddp.sh#L3
 
 ## Script de entrenamiento
 
@@ -55,7 +55,7 @@ https://github.com/diegoandradecanosa/CFR24/blob/bc21128df69f854a297964b883275b3
 
 De nuevo, la carga eficiente de los datos se hace configurando un *DistributedSampler*
 
-https://github.com/diegoandradecanosa/CFR24/blob/bc21128df69f854a297964b883275b3f54ea462b/pytorch_dist/DDP/001/mnist_classify_ddp.py#L144-l147
+https://github.com/diegoandradecanosa/CFR24/blob/bc21128df69f854a297964b883275b3f54ea462b/pytorch_dist/DDP/001/mnist_classify_ddp.py#L144-L147
 
 Se llama a DDP con el modelo Pytorch y especificando el dispositivo *device_id* que utilizará el trabajador actual.
 
