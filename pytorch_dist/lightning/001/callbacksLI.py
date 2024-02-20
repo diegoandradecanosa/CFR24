@@ -57,7 +57,7 @@ model = MNISTModel()
 trainer = Trainer(
     max_epochs=10, 
     num_nodes=2,
-    gpus=2, 
+    accelerator="gpu",
     callbacks=[
         EarlyStopping(monitor='train_loss'), 
         ModelCheckpoint(dirpath='checkpoints/', filename='{epoch}-{train_loss:.2f}'), 
