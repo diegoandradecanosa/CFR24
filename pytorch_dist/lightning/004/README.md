@@ -10,7 +10,7 @@ distribuido en Lightning que hace uso de ese *DataModule*.
 Para ejecutar el ejemplo debemos seguir los siguientes pasos:
 ```
 compute  --gpu
-source $STORE/mytorchdist/bin/activate
+source $STORE/mypython/bin/activate
 python mnist_sample.py
 ```
 - Pedimos un nodo con una GPU 
