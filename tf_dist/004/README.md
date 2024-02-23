@@ -27,7 +27,7 @@ https://github.com/diegoandradecanosa/CFR24/blob/0fdf682bbc9b504f3884da91fc5cce1
 
 En el script python con el entrenamiento, tenemos que comprobar si en cada nodo tenemos acceso a las GPUs solicitadas para cada nodo
 
-https://github.com/diegoandradecanosa/Cesga2023Courses/blob/e8044115e83a8993055f7aa4c1d7fbe6a4b9f5fe/tf_dist/TF/004/simple2NodesSol2.py#L16-L22
+https://github.com/diegoandradecanosa/CFR24/blob/0fdf682bbc9b504f3884da91fc5cce1f79d4b470/tf_dist/004/simple2NodesSol2.py#L16-L22
 
 Utilizamos un ClusterResolver de Slurm (SlurmClusterResolver) para encontrar automáticamente la configuración de los recursos disponibles.
 
