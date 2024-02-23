@@ -13,15 +13,15 @@ Los resultados se generarán en fichero con la forma jsimple*
 
 Veamos cómo se realiza el lanzamiento. El script sbatch contiene la reserva de recursos.
 
-https://github.com/diegoandradecanosa/Cesga2023Courses/blob/ba81c6a41c473c4e98227c1bf86588b553a36812/tf_dist/TF/002/sbatch_2nodes_ngpus.sh#L2-L10
+https://github.com/diegoandradecanosa/CFR24/blob/403de13945f7d99d22ee4dca7b3e4766d6dfc487/tf_dist/TF/002/sbatch_2nodes_ngpus.sh#L2-L10
 
 Básicamente son 2 nodos y 2 GPUs por nodo. Una vez cargado el entorno mytf, tenemos que lanzar el script python a través de srun
 
-https://github.com/diegoandradecanosa/Cesga2023Courses/blob/ba81c6a41c473c4e98227c1bf86588b553a36812/tf_dist/TF/002/sbatch_2nodes_ngpus.sh#L26
+https://github.com/diegoandradecanosa/CFR24/blob/403de13945f7d99d22ee4dca7b3e4766d6dfc487/tf_dist/TF/002/sbatch_2nodes_ngpus.sh#L26
 
 El código es extremadamente sencillo, simplemente descubre los recursos reservados a través de un SlurmClusterResolver
 
-https://github.com/diegoandradecanosa/Cesga2023Courses/blob/ba81c6a41c473c4e98227c1bf86588b553a36812/tf_dist/TF/002/simple.py#L1-L5
+https://github.com/diegoandradecanosa/CFR24/blob/403de13945f7d99d22ee4dca7b3e4766d6dfc487/tf_dist/TF/002/simple.py#L1-L5
 
 
 
