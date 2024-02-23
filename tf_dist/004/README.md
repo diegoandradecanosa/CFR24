@@ -4,7 +4,7 @@ Para seguir este nodo debemos empezar conectándonos al FT3 y al directorio corr
 
 ```bash
 ssh tusuario@ft3.cesga.es
-cd $STORE/Cesga2023Courses/tf_dist/TF/004
+cd $STORE/CFR24/tf_dist/004
 ```
 
 Luego lanzamos la ejecución mediante el comando
