@@ -1,0 +1,10 @@
+slurmstepd: info: Setting TMPDIR to /scratch/5947658. Previous errors about TMPDIR can be discarded
+/mnt/netapp2/Store_uni/home/ulc/es/dac/mytf/bin/python
+SLURM_NTASKS: 4
+SLURM_CPUS_PER_TASK: 32
+SLURM_NNODES: 2
+SLURM_NTASKS_PER_NODE: 2
+1: ClusterSpec({'worker': ['a100-17:8888', 'a100-17:8889', 'a100-18:8888', 'a100-18:8889']})
+0: ClusterSpec({'worker': ['a100-17:8888', 'a100-17:8889', 'a100-18:8888', 'a100-18:8889']})
+3: ClusterSpec({'worker': ['a100-17:8888', 'a100-17:8889', 'a100-18:8888', 'a100-18:8889']})
+2: ClusterSpec({'worker': ['a100-17:8888', 'a100-17:8889', 'a100-18:8888', 'a100-18:8889']})
