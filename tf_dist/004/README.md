@@ -45,3 +45,5 @@ Para utilizar estos recursos durante la ejecución, debemos hacer el entrenamien
 
 https://github.com/diegoandradecanosa/CFR24/blob/0fdf682bbc9b504f3884da91fc5cce1f79d4b470/tf_dist/004/simple2NodesSol2.py#L85-L86
 
+El [siguiente fichero](https://github.com/diegoandradecanosa/CFR24/blob/main/tf_dist/004/jsimple.o4913776) contiene un ejemplo de salida.
+
