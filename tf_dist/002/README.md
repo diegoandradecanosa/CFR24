@@ -23,6 +23,10 @@ El código es extremadamente sencillo, simplemente descubre los recursos reserva
 
 https://github.com/diegoandradecanosa/CFR24/blob/436b86fab765781de12caa1b31f4b4a3fd7a79cd/tf_dist/002/simple.py#L1-L5
 
+El siguiente fichero contiene un ejemplo de salida
+
+https://github.com/diegoandradecanosa/CFR24/blob/b3b175a87013d04e79ff4ea3fa9610cc2a29df78/tf_dist/002/jsimple.o5947658#L1-L10
+
 
 
 
