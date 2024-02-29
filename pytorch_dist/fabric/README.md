@@ -11,7 +11,7 @@ El lanzamiento del código se realiza con el comando.
 sbatch submit.sbatch
 ```
 
-La salida se obtiene en un fichero que sigue la nomenclatura habitual *slurm-xxx.out* y el fichero [slurm-3431901.out](https://github.com/diegoandradecanosa/Cesga2023Courses/blob/main/pytorch_dist/fabric/slurm-3431902.out) 
+La salida se obtiene en un fichero que sigue la nomenclatura habitual *slurm-xxx.out* y el fichero [slurm-3431901.out](https://github.com/diegoandradecanosa/CFR24/blob/main/pytorch_dist/fabric/slurm-3431902.out) 
 contiene un ejemplo de salida.
 
 En el script de entrenamiento, el uso de Fabric implica en primer lugar la creación de un objeto *Fabric* indicando los recursos computacionales disponibles
