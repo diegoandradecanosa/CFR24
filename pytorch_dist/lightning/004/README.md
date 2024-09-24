@@ -1,3 +1,34 @@
+# Example of Custom Datasets
+
+This example illustrates the use of *DataModules* in Lightning to create our own custom datasets. The code is distributed across two files:
+- [mnist_datamodule.py](https://github.com/diegoandradecanosa/Cesga2023Courses/blob/main/pytorch_dist/lightning/004/mnist_datamodule.py) Contains the definition of the *DataModule*. In this case, it is a *DataModule* for the MNIST *DataSet*.
+- [mnist_sample.py](https://github.com/diegoandradecanosa/Cesga2023Courses/blob/main/pytorch_dist/lightning/004/mnist_sample.py) Contains the code for distributed training in Lightning that uses this *DataModule*.
+
+To run the example, we follow these steps:
+```
+compute  --gpu
+source $STORE/mypython/bin/activate
+python mnist_sample.py
+```
+- Request a node with a GPU.
+- Activate the course environment.
+- Execute the script directly with Python.
+
+The definition of a custom *DataModule* in Lightning is done by defining a class that inherits from *LightningDataModule*:
+
+https://github.com/diegoandradecanosa/CFR24/blob/22e5354139f7d35a4cfe27429b567750afbcff29/pytorch_dist/lightning/004/mnist_datamodule.py#L147
+
+Implementations must be provided for all or several of these elements: *prepare_data, setup, train_dataloader, val_dataloader, test_dataloader*, and *predict_dataloader*.
+
+Let's look at an example of the implementation of one of these methods for our example:
+
+https://github.com/diegoandradecanosa/CFR24/blob/22e5354139f7d35a4cfe27429b567750afbcff29/pytorch_dist/lightning/004/mnist_datamodule.py#L207-L246
+
+The defined *DataModule* is used in the main code as an additional argument to call the *MNISTDataModule*:
+
+https://github.com/diegoandradecanosa/CFR24/blob/22e5354139f7d35a4cfe27429b567750afbcff29/pytorch_dist/lightning/004/mnist_sample.py#L56-L61
+
+
 # Ejemplo de conjuntos de datos propios
 
 Este ejemplo ilustra el uso de *DataModules* en Lightning para crear nuestros conjuntos de datos personalizados.
