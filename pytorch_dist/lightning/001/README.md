@@ -1,3 +1,22 @@
+# Example of Using Callbacks in Lightning
+
+This example illustrates the configuration of *callbacks* in a Lightning training process. The launch is performed similarly to other Lightning and DDP examples.
+
+```
+sbatch sub.sbatch
+```
+If we inspect the script, we don't find any notable differences. The output is generated similarly to other scripts, and the file 
+[slurm-342263.out](https://github.com/diegoandradecanosa/CFR24/blob/main/pytorch_dist/lightning/001/slurm-3422263.out) contains a sample output.
+
+The training script contains the same elements as the previous example script (000), except for the introduction of the necessary elements to incorporate the *callback* mechanism. It is incorporated as an argument to the *trainer* constructor.
+
+https://github.com/diegoandradecanosa/CFR24/blob/71e7962e6b78654ef123a2f0c5f7e0dcc11d0e59/pytorch_dist/lightning/001/callbacksLI.py#L57-L68
+
+The *callbacks* argument allows you to define a list of *Callback* objects. Some of them are already implemented in Lightning (*EarlyStopping, ModelCheckpoint, LearningRateMonitor, Timer*), however, 
+*MySlurmCallback* is a *Callback* created by the user.
+
+https://github.com/diegoandradecanosa/CFR24/blob/71e7962e6b78654ef123a2f0c5f7e0dcc11d0e59/pytorch_dist/lightning/001/callbacksLI.py#L11-L16
+
 # Ejemplo de uso de Callbacks en Lightning
 
 Este ejemplo ilustra la configuración de *callbacks* en un proceso de entrenamiento en Lightning. El lanzamiento se realiza de forma análoga a los otros ejemplos
